@@ -1,7 +1,7 @@
 # GremlinStudio
 My take on making an Enterprise Query Studio like for SQL Server.
 
-Functionality for Gremlin Studio include:
+Functionality for Gremlin Studio includes:
 - Gremlin query shortcuts
 - Gremlin snippets
 - Json result tab (when executing)
