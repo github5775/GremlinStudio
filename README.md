@@ -10,6 +10,8 @@ Functionality for Gremlin Studio include:
 - Vertex edge details (when clicking on Vertex)
 - View Gremlin query execution plan
 
-![](res/Screenshot - Graph.png)
+## Basic Gremlin Query
+![](res/screenshotMain.png)
 
-## test
+## Viewing Results as Vertices and Edges
+![](res/screenshotGraph.png)
