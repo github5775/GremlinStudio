@@ -1,0 +1,26 @@
+﻿<Window x:Class="GremlinStudio.TabProperty"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Tab Property" Height="115" Width="287" WindowStartupLocation="CenterOwner" ResizeMode="NoResize">
+    <Grid Margin="4">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60px"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.Resources>
+            <Style TargetType="Label">
+                <Setter Property="HorizontalAlignment" Value="Right"></Setter>
+            </Style>
+        </Grid.Resources>
+        <Label Content="Tab Title:" Grid.Row="0" Grid.Column="0" Height="25" />
+        <TextBox Name="txtTitle" Grid.Row="0" Grid.Column="1" Height="25" />
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Orientation="Horizontal">
+            <Button Content="OK" Name="btnOK" IsDefault="True" Height="23" Click="btnOK_Click"></Button>
+            <Button Content="Cancel" Name="btnCancel" IsCancel="True" Height="23"></Button>
+        </StackPanel>
+    </Grid>
+</Window>
