@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <Import Condition=" '$(EAZFUSCATOR_NET_HOME)' != '' and Exists('$(EAZFUSCATOR_NET_HOME)\Integration\MSBuild\Eazfuscator.NET.targets') " Project="$(EAZFUSCATOR_NET_HOME)\Integration\MSBuild\Eazfuscator.NET.targets" />
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <!-- Eazfuscator.NET is integrated with this project at MSBuild level: https://www.gapotchenko.com/eazfuscator.net/kb/100036 -->
+    <EazfuscatorIntegration>MSBuild</EazfuscatorIntegration>
+    <EazfuscatorActiveConfiguration>Release</EazfuscatorActiveConfiguration>
+    <EazfuscatorCompatibilityVersion>2019.4</EazfuscatorCompatibilityVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+</Project>
