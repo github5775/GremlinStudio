@@ -1,5 +1,7 @@
 # GremlinStudio
-My take on making an Enterprise Query Studio like for SQL Server.
+My take on making an Enterprise Query Studio like SQL Server Management Studio, but this is primarily for queries.
+
+But why WPF?  Because no one wants to enter their cosmos db credentials in a web page, they want to use a fat client, and WPF is much better then WinForms.  UWP is an option, but I wanted to simplify the project.
 
 Functionality for Gremlin Studio includes:
 - Gremlin query shortcuts
