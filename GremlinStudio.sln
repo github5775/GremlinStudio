@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GremlinStudio", "GremlinStudio\GremlinStudio.csproj", "{2A04A1D5-1CB7-4A3B-B381-E5E0E7E01A83}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Graphyte", "Graphyte\Graphyte.csproj", "{3B80AD76-F26C-46EE-83A2-27CB743C9940}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gremlin.Net", "Gremlin.Net\Gremlin.Net.csproj", "{C798D3A8-AA55-4902-8545-75E8F7206D3B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wpf.Notification", "Wpf.Toaster\Wpf.Notification.csproj", "{E91234C3-16CB-4D63-99FD-B82B78ACEE93}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GremlinHelper", "GremlinHelper\GremlinHelper.csproj", "{526510D1-B005-4B21-AB21-40C6F866755B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A04A1D5-1CB7-4A3B-B381-E5E0E7E01A83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A04A1D5-1CB7-4A3B-B381-E5E0E7E01A83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A04A1D5-1CB7-4A3B-B381-E5E0E7E01A83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A04A1D5-1CB7-4A3B-B381-E5E0E7E01A83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B80AD76-F26C-46EE-83A2-27CB743C9940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B80AD76-F26C-46EE-83A2-27CB743C9940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B80AD76-F26C-46EE-83A2-27CB743C9940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B80AD76-F26C-46EE-83A2-27CB743C9940}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C798D3A8-AA55-4902-8545-75E8F7206D3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C798D3A8-AA55-4902-8545-75E8F7206D3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C798D3A8-AA55-4902-8545-75E8F7206D3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C798D3A8-AA55-4902-8545-75E8F7206D3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E91234C3-16CB-4D63-99FD-B82B78ACEE93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E91234C3-16CB-4D63-99FD-B82B78ACEE93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E91234C3-16CB-4D63-99FD-B82B78ACEE93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E91234C3-16CB-4D63-99FD-B82B78ACEE93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{526510D1-B005-4B21-AB21-40C6F866755B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{526510D1-B005-4B21-AB21-40C6F866755B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{526510D1-B005-4B21-AB21-40C6F866755B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{526510D1-B005-4B21-AB21-40C6F866755B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {17A273B2-4F8B-454E-8084-250730E541E1}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://github5775.visualstudio.com/
+		SccProjectUniqueName0 = GremlinStudio\\GremlinStudio.csproj
+		SccProjectName0 = GremlinStudio
+		SccAuxPath0 = https://github5775.visualstudio.com
+		SccLocalPath0 = GremlinStudio
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = Graphyte\\Graphyte.csproj
+		SccProjectName1 = Graphyte
+		SccAuxPath1 = https://github5775.visualstudio.com
+		SccLocalPath1 = Graphyte
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName2 = Gremlin.Net\\Gremlin.Net.csproj
+		SccProjectName2 = Gremlin.Net
+		SccAuxPath2 = https://github5775.visualstudio.com
+		SccLocalPath2 = Gremlin.Net
+		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName3 = Wpf.Toaster\\Wpf.Notification.csproj
+		SccProjectName3 = Wpf.Toaster
+		SccAuxPath3 = https://github5775.visualstudio.com
+		SccLocalPath3 = Wpf.Toaster
+		SccProvider3 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName4 = GremlinHelper\\GremlinHelper.csproj
+		SccProjectName4 = GremlinHelper
+		SccAuxPath4 = https://github5775.visualstudio.com
+		SccLocalPath4 = GremlinHelper
+		SccProvider4 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+EndGlobal
