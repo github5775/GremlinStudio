@@ -10,7 +10,7 @@ Functionality for Gremlin Studio includes:
 - Vertex edge details (when clicking on Vertex)
 - View Gremlin query execution plan
 
-## Download Executable (https://gremlineditor.azurewebsites.net) or Build from Code
+## [Download Executable](https://gremlineditor.azurewebsites.net) or Build from Code
 
 ## Basic Gremlin Query
 ![](res/screenshotMain.png)
