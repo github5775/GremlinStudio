@@ -20,4 +20,4 @@ Functionality for Gremlin Studio includes:
 ## Viewing Results as Vertices and Edges
 ![](res/screenshotGraph.png)
 
-#### * Please bear in mind that I didn't address Graph DB design in this studio, other than providing the ability to easily view the actual execution plans.  In future versions I may add this functionality.
+#### * Please bear in mind that in this studio I didn't address Graph DB design, i.e. partitions, duplication, and ChangeFeed triggers, other than providing the ability to easily view the actual execution plans.  In future versions I may add this functionality.
