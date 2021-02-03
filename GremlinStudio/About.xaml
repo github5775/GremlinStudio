@@ -1,4 +1,4 @@
-﻿<Window x:Class="GremlinStudio.About"
+<Window x:Class="GremlinStudio.About"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -6,14 +6,14 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:GremlinStudio"
         mc:Ignorable="d"
-        Title="About Gremlin Studio v1.5" Height="420" Width="450" WindowStartupLocation="CenterOwner" ResizeMode="NoResize">
+        Title="About Gremlin Studio" Height="420" Width="450" WindowStartupLocation="CenterOwner" ResizeMode="NoResize">
     <Grid>
         <Border>
             <materialDesign:Card Background="LimeGreen" Margin="10">
                 <StackPanel>
                     <TextBlock HorizontalAlignment="Center">
                         <TextBlock Margin="12" Foreground="DarkGreen" FontSize="14" FontWeight="Bold" TextWrapping="WrapWithOverflow">
-                            Designed expressly for developing Gremlin queries, with selectable raw json results and graphic vertices.  Click on any vertex for its properties, partition, and edges (if any)...double-click to create a new query tab for that vertex.  Click on an edge to set the query in the Clipboard.  Includes a lot of helper keys for writing perfect Gremlin syntax much faster.<LineBreak /><LineBreak />
+                            Designed expressly for developing Gremlin queries, with selectable raw json results and graphic vertices. Click on any vertex for its properties, partition, and edges (if any)...double-click to create a new query tab for that vertex. Click on an edge to set the query in the Clipboard. Includes a lot of helper keys for writing perfect Gremlin syntax much faster.  (v1.5)<LineBreak /><LineBreak />
                             Built on the great <Hyperlink Name="tinkerLink" RequestNavigate="hyperlink_RequestNavigate" NavigateUri="https://github.com/apache/tinkerpop">Tinkerpop/Apache project</Hyperlink>, 
                             especially <Hyperlink Name="florianLink" RequestNavigate="hyperlink_RequestNavigate" NavigateUri="https://github.com/apache/tinkerpop/tree/master/gremlin-dotnet">Hockmann's Gremlin.Net</Hyperlink>, 
                             as well as <Hyperlink Name="designLink" RequestNavigate="hyperlink_RequestNavigate" NavigateUri="https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit">MaterialDesignInXaml</Hyperlink>, the Tab Control from <Hyperlink Name="tabLink" RequestNavigate="hyperlink_RequestNavigate" NavigateUri="https://www.codeproject.com/articles/493538/add-remove-tabs-dynamically-in-wpf">Farid</Hyperlink>,
@@ -22,7 +22,7 @@
                         </TextBlock>
                     </TextBlock>
                     <TextBlock HorizontalAlignment="Center" FontSize="14" FontWeight="Bold" Foreground="DarkGreen">
-                        (c) 2020, <Hyperlink Name="hyperlink" RequestNavigate="hyperlink_RequestNavigate" NavigateUri="https://www.yarondata.com">yarondata.com</Hyperlink>.
+                        (c) 2019, <Hyperlink Name="hyperlink" RequestNavigate="hyperlink_RequestNavigate" NavigateUri="https://www.yarondata.com">yarondata.com</Hyperlink>.
                         <LineBreak />
                     </TextBlock>
                     <Button Name="buttonOk" Click="buttonOk_Click" HorizontalAlignment="Center"  Background="Lime" Foreground="DarkGreen">Ok</Button>
