@@ -1,7 +1,7 @@
 # GremlinStudio
 My take on making an Enterprise Query Studio like SQL Server Management Studio, but this is primarily for queries.
 
-But why WPF?  Users prefer to enter their Cosmos DB credentials into a fat client (rather than someone's webpage), and WPF has a more robust UI then WinForms.  UWP is an option, but I wanted to simplify the project.
+But why WPF?  Users prefer to enter their Cosmos DB credentials into a fat client (rather than someone's webpage), and WPF has a more robust UI then WinForms.  UWP is an option, but I wanted to simplify the project.  (NB: This tool works for partitions of type string; I am in the process of expanding it to partitions of type "number.")
 
 Functionality for Gremlin Studio includes:
 - Gremlin query shortcuts
