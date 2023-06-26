@@ -1,4 +1,4 @@
-﻿
+
 using Gremlin.Net.Driver;
 using Gremlin.Net.Driver.Exceptions;
 using Gremlin.Net.Structure.IO.GraphSON;
@@ -25,6 +25,8 @@ using Microsoft.Extensions.Options;
 using System.Threading;
 using MaterialDesignThemes.Wpf;
 using Wpf.Notification;
+using System.Net.WebSockets;
+using System.Net;
 
 namespace GremlinStudio
 {
@@ -63,7 +65,7 @@ namespace GremlinStudio
         {
             _options = options;
 
-            if (DateTime.UtcNow > DateTime.Parse("6/30/2021"))
+            if (DateTime.UtcNow > DateTime.Parse("12/31/2023"))
             {
                 return;
             }
@@ -78,11 +80,12 @@ namespace GremlinStudio
             }
             catch (Exception ex)
             {
-                    MessageBox.Show(ex.Message);
-                    return;
+                MessageBox.Show(ex.Message);
+                return;
             }
         }
         #endregion
+
 
         #region query tab helpers
         private void tabInit()
@@ -248,8 +251,7 @@ namespace GremlinStudio
 
         #region db helpers
         private void ConnectToServer()
-        {
-           
+        {         
             try
             {
                 Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
@@ -281,57 +283,46 @@ namespace GremlinStudio
                 MessageBox.Show(ex.Message);
                 return;
             }
-            ////////create client
 
-
-            //_ctx = new GremlinClient(_server, new GraphSON2Reader(), new GraphSON2Writer(), GremlinClient.GraphSON2MimeType);
-
-            ///
-            ////_server = new GremlinServer(_options.Value.GremlinEndpoint.Replace("https://", "").Replace(":443/", ""), 443, enableSsl: true,
-
-            ////                                                               username: "/dbs/" + _options.Value.Db + "/colls/" + _options.Value.Collection,
-            ////                                                               password: _options.Value.AuthKey);
-
-            ////_ctx = new GremlinClient(_server, new GraphSON2Reader(), new GraphSON2Writer(), GremlinClient.GraphSON2MimeType);
         }
         private void ConnectToClient()
         {
-            //Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-            //string endpoint = config.AppSettings.Settings["GremlinEndpoint"].Value;
-            //string key = config.AppSettings.Settings["AuthKey"].Value;
-            //string db = config.AppSettings.Settings["CosmosDb"].Value;
-            //string collection = config.AppSettings.Settings["Collection"].Value;
+            Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            string endpoint = config.AppSettings.Settings["GremlinEndpoint"].Value;
+            string key = config.AppSettings.Settings["AuthKey"].Value;
+            string db = config.AppSettings.Settings["CosmosDb"].Value;
+            string collection = config.AppSettings.Settings["Collection"].Value;
 
-            //_server = new GremlinServer(endpoint.Replace("https://", "").Replace("wss://", "").Replace(":443/", ""), 443, enableSsl: true,
-
-            //                                                               username: "/dbs/" + db + "/colls/" + collection,
-            //                                                               password: key);
-            try
+            if (string.IsNullOrWhiteSpace(endpoint) || string.IsNullOrWhiteSpace(key) || string.IsNullOrWhiteSpace(db) || string.IsNullOrWhiteSpace(collection))
             {
-                _ctx = new GremlinClient(_server, new GraphSON2Reader(), new GraphSON2Writer(), GremlinClient.GraphSON2MimeType);
-
+                _ = MessageBox.Show("Please complete your connection settings...");
+                return;
             }
-            catch 
-            {
 
-                if (_ctx == null)
+            string containerLink = $"/dbs/{db}/colls/{collection}";
+
+            _server = new GremlinServer(endpoint, 443, enableSsl: true,
+                                                               username: containerLink,
+                                                               password: key);
+            ConnectionPoolSettings connectionPoolSettings = new ConnectionPoolSettings()
+            {
+                MaxInProcessPerConnection = 10,
+                PoolSize = 30,
+                ReconnectionAttempts = 3,
+                ReconnectionBaseDelay = TimeSpan.FromMilliseconds(500)
+            };
+
+            var webSocketConfiguration =
+                new Action<ClientWebSocketOptions>(options =>
                 {
-                    MessageBox.Show("Please check your connection settings...");
-                    return;
-                }
-            }
-            ////////create client
-            
+                    options.KeepAliveInterval = TimeSpan.FromSeconds(10);
+                });
 
-            //_ctx = new GremlinClient(_server, new GraphSON2Reader(), new GraphSON2Writer(), GremlinClient.GraphSON2MimeType);
-
-            ///
-            ////_server = new GremlinServer(_options.Value.GremlinEndpoint.Replace("https://", "").Replace(":443/", ""), 443, enableSsl: true,
-
-            ////                                                               username: "/dbs/" + _options.Value.Db + "/colls/" + _options.Value.Collection,
-            ////                                                               password: _options.Value.AuthKey);
-
-            ////_ctx = new GremlinClient(_server, new GraphSON2Reader(), new GraphSON2Writer(), GremlinClient.GraphSON2MimeType);
+            _ctx = new GremlinClient(_server, new GraphSON2Reader(),
+                new GraphSON2Writer(),
+                "application/vnd.gremlin-v2.0+json",
+                connectionPoolSettings,
+                webSocketConfiguration);
         }
         //public async Task<List<T>> ExecuteQueryAsync<T>(string query)
         //{
@@ -353,7 +344,7 @@ namespace GremlinStudio
             if (_ctx == null)
             {
                 Debug.WriteLine($"------------------------------------------------------- NEW CLIENT");
-                _ctx = new GremlinClient(_server, new GraphSON2Reader(), new GraphSON2Writer(), GremlinClient.GraphSON2MimeType);
+                _ctx = new GremlinClient(_server, new GraphSON2Reader(), new GraphSON2Writer(), "application/vnd.gremlin-v2.0+json");
 
             }
 
@@ -533,7 +524,7 @@ namespace GremlinStudio
         //    if (_ctx == null)
         //    {
         //        Debug.WriteLine($"------------------------------------------------------- NEW CLIENT");
-        //        _ctx = new GremlinClient(_server, new GraphSON2Reader(), new GraphSON2Writer(), GremlinClient.GraphSON2MimeType);
+        //        _ctx = new GremlinClient(_server, new GraphSON2Reader(), new GraphSON2Writer(), "application/vnd.gremlin-v2.0+json");
         //    }
 
         //    if (_ctx != null)
@@ -1105,9 +1096,9 @@ namespace GremlinStudio
             config.Save();
             ConfigurationManager.RefreshSection("appSettings");
 
-            ConnectToServer();
+            //ConnectToServer();
 
-            //ConnectToClient();
+            ConnectToClient();
         }
 
         private async void graphite_VertexClick(object sender, VertexEventArgs e)
