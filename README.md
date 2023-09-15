@@ -1,5 +1,5 @@
 # GremlinStudio
-## The GremlinClient has changed, and I have updated the code to use NET 6 and GremlinClient 3.4.13.  Next step, update the code to use the latest version of the GremlinClient lib. ##
+## The underlying "GremlinClient" has changed, and I am updating the code to use NET 6 and GremlinClient 3.7.0.  Next step, update the studio code to use the latest version of the GremlinClient lib. ##
 
 My take on making an Enterprise Query Studio like SQL Server Management Studio, but this is primarily for queries.
 
