@@ -1,5 +1,4 @@
 <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
-  <Import Condition=" '$(EAZFUSCATOR_NET_HOME)' != '' and Exists('$(EAZFUSCATOR_NET_HOME)\Integration\MSBuild\Eazfuscator.NET.targets') " Project="$(EAZFUSCATOR_NET_HOME)\Integration\MSBuild\Eazfuscator.NET.targets" />
   <PropertyGroup Label="Globals">
     <SccProjectName>SAK</SccProjectName>
     <SccProvider>SAK</SccProvider>
@@ -43,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Graphyte\Graphyte.csproj" />
-    <ProjectReference Include="..\GremlinHelper\GremlinUtilities.csproj" />
+    <ProjectReference Include="..\GremlinHelper\GremlinHelper.csproj" />
     <ProjectReference Include="..\Wpf.Toaster\Wpf.Notification.csproj" />
   </ItemGroup>
   <ItemGroup>

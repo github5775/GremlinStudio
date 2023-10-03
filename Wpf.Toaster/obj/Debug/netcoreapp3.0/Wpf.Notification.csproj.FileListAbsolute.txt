@@ -1,0 +1,17 @@
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\Wpf.Toaster\bin\Debug\netcoreapp3.0\Wpf.Notification.deps.json
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\Wpf.Toaster\bin\Debug\netcoreapp3.0\Wpf.Notification.dll
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\Wpf.Toaster\bin\Debug\netcoreapp3.0\Wpf.Notification.pdb
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\Wpf.Toaster\obj\Debug\netcoreapp3.0\NotificationsOverlayWindow.g.cs
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\Wpf.Toaster\obj\Debug\netcoreapp3.0\GeneratedInternalTypeHelper.g.cs
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\Wpf.Toaster\obj\Debug\netcoreapp3.0\Wpf.Notification_MarkupCompile.cache
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\Wpf.Toaster\obj\Debug\netcoreapp3.0\Wpf.Notification_MarkupCompile.lref
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\Wpf.Toaster\obj\Debug\netcoreapp3.0\NotificationsOverlayWindow.baml
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\Wpf.Toaster\obj\Debug\netcoreapp3.0\Themes\Generic.baml
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\Wpf.Toaster\obj\Debug\netcoreapp3.0\Wpf.Notification.g.resources
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\Wpf.Toaster\obj\Debug\netcoreapp3.0\Wpf.Notification.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\Wpf.Toaster\obj\Debug\netcoreapp3.0\Wpf.Notification.AssemblyInfoInputs.cache
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\Wpf.Toaster\obj\Debug\netcoreapp3.0\Wpf.Notification.AssemblyInfo.cs
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\Wpf.Toaster\obj\Debug\netcoreapp3.0\Wpf.Notification.csproj.CoreCompileInputs.cache
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\Wpf.Toaster\obj\Debug\netcoreapp3.0\Wpf.Notification.sourcelink.json
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\Wpf.Toaster\obj\Debug\netcoreapp3.0\Wpf.Notification.dll
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\Wpf.Toaster\obj\Debug\netcoreapp3.0\Wpf.Notification.pdb

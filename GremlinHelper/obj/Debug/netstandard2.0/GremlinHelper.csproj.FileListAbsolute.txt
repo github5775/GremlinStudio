@@ -1,0 +1,11 @@
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\GremlinHelper\bin\Debug\netstandard2.0\GremlinHelper.deps.json
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\GremlinHelper\bin\Debug\netstandard2.0\GremlinHelper.dll
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\GremlinHelper\bin\Debug\netstandard2.0\GremlinHelper.pdb
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\GremlinHelper\obj\Debug\netstandard2.0\GremlinHelper.csproj.AssemblyReference.cache
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\GremlinHelper\obj\Debug\netstandard2.0\GremlinHelper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\GremlinHelper\obj\Debug\netstandard2.0\GremlinHelper.AssemblyInfoInputs.cache
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\GremlinHelper\obj\Debug\netstandard2.0\GremlinHelper.AssemblyInfo.cs
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\GremlinHelper\obj\Debug\netstandard2.0\GremlinHelper.csproj.CoreCompileInputs.cache
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\GremlinHelper\obj\Debug\netstandard2.0\GremlinHelper.sourcelink.json
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\GremlinHelper\obj\Debug\netstandard2.0\GremlinHelper.dll
+C:\Users\Admin2\Source\Repos\github5775\GremlinStudio\GremlinHelper\obj\Debug\netstandard2.0\GremlinHelper.pdb
