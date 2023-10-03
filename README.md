@@ -1,5 +1,5 @@
 # GremlinStudio
-## The underlying "GremlinClient" has changed, and I am updating the code to use NET 6 and GremlinClient 3.7.0.  Next step, update the studio code to use the latest version of the GremlinClient lib. ##
+## The underlying "GremlinClient" has changed, and I found that GremlinClient 3.4.13 returns parseable JSON, so I have referenced this.  Next step, update the studio code to use the latest version of the GremlinClient lib when I can see how the new lib and receive queries as script and return parseable JSON. ##
 
 My take on making an Enterprise Query Studio like SQL Server Management Studio, but this is primarily for queries.
 
